@@ -1,4 +1,4 @@
-package AOPdemo.aspect.Order;
+package AOPdemo.aspect.OrderAndJoinPoints;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;

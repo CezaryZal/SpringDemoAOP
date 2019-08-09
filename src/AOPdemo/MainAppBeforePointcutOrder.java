@@ -13,7 +13,7 @@ public class MainAppBeforePointcutOrder {
         AccountDAO accountDAO = context.getBean("accountDAO", AccountDAO.class);
         MembershipDAO memberDAO = context.getBean("membershipDAO", MembershipDAO.class);
 
-        Account account = new Account();
+        Account account = new Account("MadMax", " High survival level.");
 
         accountDAO.addAccount(account);
         accountDAO.addAccount();

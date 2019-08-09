@@ -1,4 +1,4 @@
-package AOPdemo.aspect.Order;
+package AOPdemo.aspect.OrderAndJoinPoints;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Order(1)
 public class CloudLogAsyncAspect {
 
-    @Before("AOPdemo.aspect.Order.AOPExpressions.forDAOPackageNoGetterSetter()")
+    @Before("AOPdemo.aspect.OrderAndJoinPoints.AOPExpressions.forDAOPackageNoGetterSetter()")
     public void logToCloudAsync(){
         System.out.println("\n Logging to Cloud in async fashion");
     }
