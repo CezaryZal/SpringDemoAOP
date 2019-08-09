@@ -9,23 +9,23 @@ import org.springframework.stereotype.Component;
 @Component
 public class PointcutLoggingAspect {
 
-    @Pointcut("execution(* AOPdemo.DAO.*.*(..))")
-    private void forDAOPackage(){}
-
-    @Pointcut("execution(* AOPdemo.DAO.*.get*(..))")
-    private void getter(){}
-
-    @Pointcut("execution(* AOPdemo.DAO.*.set*(..))")
-    private void setter(){}
-
-    @Pointcut("forDAOPackage() && !(getter() || setter())")
-    private void forDAOPackageNoGetterSetter(){
-    }
-
-    @Before("forDAOPackageNoGetterSetter()")
-    public void beforeAddAccountAdvice(){
-        System.out.println("\n Executing @Before advice on addAccount()");
-    }
+//    @Pointcut("execution(* AOPdemo.DAO.*.*(..))")
+//    private void forDAOPackage(){}
+//
+//    @Pointcut("execution(* AOPdemo.DAO.*.get*(..))")
+//    private void getter(){}
+//
+//    @Pointcut("execution(* AOPdemo.DAO.*.set*(..))")
+//    private void setter(){}
+//
+//    @Pointcut("forDAOPackage() && !(getter() || setter())")
+//    private void forDAOPackageNoGetterSetter(){
+//    }
+//
+//    @Before("forDAOPackageNoGetterSetter()")
+//    public void beforeAddAccountAdvice(){
+//        System.out.println("\n Executing @Before advice on addAccount()");
+//    }
 
 
 

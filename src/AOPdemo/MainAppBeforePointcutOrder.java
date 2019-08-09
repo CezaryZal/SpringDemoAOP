@@ -4,7 +4,7 @@ import AOPdemo.DAO.AccountDAO;
 import AOPdemo.DAO.MembershipDAO;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class MainDemoApp {
+public class MainAppBeforePointcutOrder {
     public static void main (String [] args){
 
         //read spring config java class
