@@ -10,7 +10,11 @@ public class MembershipDAO {
     }
 
     public String addAccount(String text){
-        System.out.println(getClass() + " Dong stuff: add a membership account");
+        System.out.println(getClass() + " Dong stuff: add a membership account with text");
         return text + "From memebership";
+    }
+
+    public void goToSleep(){
+        System.out.println(getClass() + "I'm going to sleep now..");
     }
 }
