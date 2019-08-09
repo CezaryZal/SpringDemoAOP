@@ -21,7 +21,23 @@ public class BeforeLoggingAspect {
 //    @Before("execution(public void add*())")
 
     //To see all method start work 'add...', whatever what is the return type
-    @Before("execution(public * add*())")
+//    @Before("execution(public * add*())")
+
+    //To see all method start work 'add...', whatever what is the return type BUT method with the One variables/param
+    //In this example ONE object Account
+//    @Before("execution(public * add*(AOPdemo.Account))")
+
+    //To see all method start work 'add...', whatever what is the return type BUT method with some variables/params
+    //In this example object Account and something else (any number of argument)
+//    @Before("execution(public * add*(AOPdemo.Account, ..))")
+
+    //To see all method start work 'add...', whatever what is the return type BUT method with some or anyone variables/params
+    //In this example any number of argument (also 0)
+//    @Before("execution(public * add*(..))")
+
+    //To see all method in AOPdemo.DAO package (all classes) with some or anyone params
+    //"exec.(Return type|  package  |C|m|(Params))")
+    @Before("execution(* AOPdemo.DAO.*.*(..))")
     public void beforeAddAccountAdvice(){
 
         System.out.println("\n Executing @Before advice on addAccount()");
